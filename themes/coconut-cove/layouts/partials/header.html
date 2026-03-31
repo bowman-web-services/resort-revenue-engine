@@ -1,0 +1,13 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">🥥 {{ .Site.Params.resortName }}</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.main-nav').classList.toggle('active')">☰</button>
+    <ul class="main-nav">
+      {{ range .Site.Menus.main }}
+        <li{{ if eq .Name "For Resorts" }} class="nav-cta"{{ end }}>
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</header>

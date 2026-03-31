@@ -1,0 +1,9 @@
+name = "Coconut Cove"
+license = "MIT"
+licenselink = "https://github.com/bowman-web-services"
+description = "Custom theme for Coconut Cove Resort demo site"
+min_version = "0.92.0"
+
+[author]
+  name = "Bowman Web Services"
+  homepage = "https://bowmanwebservices.com"

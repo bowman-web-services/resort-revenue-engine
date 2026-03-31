@@ -1,0 +1,32 @@
+{{ define "main" }}
+<!-- Hero -->
+<div class="hero">
+  <h1>Welcome to {{ .Site.Params.resortName }}</h1>
+  <p class="tagline">{{ .Site.Params.tagline }}</p>
+  <p>Experience the Resort Revenue Engine in Action</p>
+  <div style="margin-top: var(--space-8); display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+    <a href="/club/" class="btn btn-white">Join The Cove Club</a>
+    <a href="/for-resorts/" class="btn btn-accent">For Resort Directors</a>
+  </div>
+</div>
+
+<!-- 6 Revenue Division Cards -->
+<div class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Six Revenue Channels. One Platform.</h2>
+      <p style="color: var(--color-text-light); max-width: 600px; margin: 0 auto;">Every all-inclusive resort has these revenue opportunities. Most only market one or two well. We build and optimize all six.</p>
+    </div>
+    {{ .Content }}
+  </div>
+</div>
+
+<!-- BWS Pitch -->
+<div class="section section--primary" style="text-align: center;">
+  <div class="container" style="text-align: center;">
+    <h2>Powered by Bowman Web Services</h2>
+    <p style="max-width: 600px; margin: 0 auto var(--space-8); opacity: 0.9;">Everything you see on this site — the booking flow, membership program, day pass system, wedding portal, promo qualification, member rentals — we build it all for YOUR resort, with YOUR branding, powered by AI.</p>
+    <a href="/for-resorts/" class="btn btn-white">See the Platform →</a>
+  </div>
+</div>
+{{ end }}

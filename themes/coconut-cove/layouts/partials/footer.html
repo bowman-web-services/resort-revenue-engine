@@ -1,0 +1,49 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>🥥 {{ .Site.Params.resortName }}</h4>
+        <p>{{ .Site.Params.tagline }}</p>
+        <p style="margin-top: var(--space-4);">
+          📞 <a href="tel:{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a><br>
+          ✉️ <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>The Resort</h4>
+        <ul>
+          <li><a href="/resort/">Overview</a></li>
+          <li><a href="/resort/accommodations/">Accommodations</a></li>
+          <li><a href="/resort/dining/">Dining</a></li>
+          <li><a href="/resort/activities/">Activities</a></li>
+          <li><a href="/resort/spa/">Spa</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Revenue Divisions</h4>
+        <ul>
+          <li><a href="/club/">The Cove Club</a></li>
+          <li><a href="/weddings/">Weddings & Events</a></li>
+          <li><a href="/day-pass/">Day Pass</a></li>
+          <li><a href="/promos/">Special Offers</a></li>
+          <li><a href="/member-rentals/">Member Rentals</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>For Resort Directors</h4>
+        <ul>
+          <li><a href="/for-resorts/">The Platform</a></li>
+          <li><a href="/for-resorts/platform/">Tech Stack</a></li>
+          <li><a href="/for-resorts/pricing/">Investment</a></li>
+          <li><a href="/for-resorts/about-bws/">About BWS</a></li>
+          <li><a href="/for-resorts/contact/">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Powered by <a href="{{ .Site.Params.bwsUrl }}">Bowman Web Services</a> — Resort Revenue Engine</p>
+      <p style="margin-top: var(--space-2);">This is a demonstration website. {{ .Site.Params.resortName }} is fictional. No real bookings are processed.</p>
+      <p style="margin-top: var(--space-2);"><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/disclaimer/">Disclaimer</a></p>
+    </div>
+  </div>
+</footer>

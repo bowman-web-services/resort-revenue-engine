@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="page-hero">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.subtitle }}<p>{{ . }}</p>{{ end }}
+</div>
+<div class="breadcrumbs">
+  <a href="/">Home</a>
+  {{ $url := "" }}
+  {{ range $i, $part := (split (strings.TrimPrefix "/" .RelPermalink) "/") }}
+    {{ if $part }}
+      {{ $url = printf "%s/%s" $url $part }}
+      <span>›</span>
+      {{ if eq $i (sub (len (split (strings.TrimPrefix "/" $.RelPermalink) "/")) 2) }}
+        <span>{{ $.Title }}</span>
+      {{ else }}
+        <a href="{{ $url }}/">{{ $part | humanize | title }}</a>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</div>
+<div class="section">
+  <div class="container container--narrow">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,31 @@
+{
+  "property": "resort-revenue-engine",
+  "domain": "resortrevenueengine.com",
+  "netlify_site_id": "880a64a7-1017-4064-955e-4b22fa7a6b57",
+  "github_repo": "bowman-web-services/resort-revenue-engine",
+  "version": "1.0.0",
+  "last_verified": "2026-03-31",
+  "hugo_version": "0.140.2",
+  "fingerprints": {
+    "ga4_id": "",
+    "phone": "3863848445",
+    "brand_color": "#0e7c5f",
+    "theme": "custom",
+    "font_strategy": "system-stack",
+    "affiliate_tag": ""
+  },
+  "expected_pages_min": 30,
+  "expected_redirects_min": 0,
+  "illegal_paths": [],
+  "required_paths": [
+    "/",
+    "/resort/",
+    "/club/",
+    "/weddings/",
+    "/day-pass/",
+    "/promos/",
+    "/member-rentals/",
+    "/for-resorts/"
+  ],
+  "notes": "FICTIONAL demo resort. Not a real property. Showcases Resort Revenue Engine platform for BWS portfolio."
+}

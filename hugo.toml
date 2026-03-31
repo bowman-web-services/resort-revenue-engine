@@ -1,0 +1,56 @@
+baseURL = "https://resort-revenue-engine.netlify.app/"
+languageCode = "en-us"
+title = "Coconut Cove Resort & Spa — Resort Revenue Engine Demo"
+theme = "coconut-cove"
+
+[params]
+  resortName = "Coconut Cove Resort & Spa"
+  tagline = "Where Every Day Feels Like Paradise"
+  description = "A fictional all-inclusive resort demonstrating the Resort Revenue Engine platform by Bowman Web Services"
+  phone = "386-384-8445"
+  email = "demo@resortrevenueengine.com"
+  isFictional = true
+  bwsUrl = "https://bowmanwebservices.com"
+  bwsText = "A Resort Revenue Engine Demo by Bowman Web Services"
+
+  [params.colors]
+    primary = "#0e7c5f"
+    secondary = "#f4a835"
+    accent = "#e85d3a"
+    dark = "#1a2332"
+    light = "#f5f0e8"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Resort"
+    url = "/resort/"
+    weight = 1
+  [[menu.main]]
+    name = "The Club"
+    url = "/club/"
+    weight = 2
+  [[menu.main]]
+    name = "Weddings"
+    url = "/weddings/"
+    weight = 3
+  [[menu.main]]
+    name = "Day Pass"
+    url = "/day-pass/"
+    weight = 4
+  [[menu.main]]
+    name = "Promos"
+    url = "/promos/"
+    weight = 5
+  [[menu.main]]
+    name = "Member Rentals"
+    url = "/member-rentals/"
+    weight = 6
+  [[menu.main]]
+    name = "For Resorts"
+    url = "/for-resorts/"
+    weight = 7
