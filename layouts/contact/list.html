@@ -1,0 +1,171 @@
+{ define "main" }
+<div class="page-hero" style="background:linear-gradient(135deg,#0a3d62 0%,#1a5276 60%,#0077b6 100%);color:#fff;padding:3rem 0 2.5rem;text-align:center;">
+  <div class="container">
+    <h1 style="font-size:2rem;margin-bottom:.5rem;">Request Resort Information</h1>
+    <p style="opacity:.9;max-width:580px;margin:0 auto;">Fill out the form below — our team will contact you within 24 hours to confirm your eligibility.</p>
+  </div>
+</div>
+
+<section style="padding:3rem 0;">
+  <div class="container">
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+
+    <div id="vacation-form-wrap" style="max-width:680px;margin:2rem auto 0;">
+
+      <div style="background:#fff8f0;border:2px solid #0077b6;border-radius:8px;padding:1.25rem 1.5rem;margin-bottom:1.5rem;font-size:.88rem;">
+        <strong>Who Qualifies:</strong> Married or cohabitating couples, at least one partner age 28–70, full-time employed, valid major credit card, US or Canadian citizen. <a href="https://sandospromo.com/terms-qualifications/" target="_blank" style="color:#0077b6;">Full requirements →</a>
+      </div>
+
+      <form id="vac-form-a486e9" onsubmit="submitVacForm(event, 'a486e9')" novalidate>
+
+        <h3 style="font-size:1.1rem;margin:0 0 1rem;color:#333;border-bottom:2px solid #eee;padding-bottom:.5rem;">Your Contact Information</h3>
+
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;"><div style="flex:1;min-width:180px;margin-bottom:.85rem;"><label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Primary Applicant Name *</label><input type="text" name="p1_name" required placeholder="First & Last Name" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'"></div><div style="flex:1;min-width:180px;margin-bottom:.85rem;"><label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Primary Applicant Age *</label><input type="number" name="p1_age" required placeholder="Age (must be 28–70)" min="18" max="99" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'"></div></div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;"><div style="flex:1;min-width:180px;margin-bottom:.85rem;"><label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Partner / Spouse Name</label><input type="text" name="p2_name" placeholder="First & Last Name" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'"></div><div style="flex:1;min-width:180px;margin-bottom:.85rem;"><label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Partner Age</label><input type="number" name="p2_age" placeholder="Age" min="18" max="99" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'"></div></div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;"><div style="flex:1;min-width:180px;margin-bottom:.85rem;"><label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Phone *</label><input type="tel" name="phone" required placeholder="555-000-0000" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'"></div><div style="flex:1;min-width:180px;margin-bottom:.85rem;"><label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Email *</label><input type="email" name="email" required placeholder="you@example.com" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'"></div></div>
+
+        <h3 style="font-size:1.1rem;margin:1.5rem 0 1rem;color:#333;border-bottom:2px solid #eee;padding-bottom:.5rem;">Your Trip Details</h3>
+
+        <div style="margin-bottom:.85rem;">
+          <label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Destination Area *</label>
+          <select name="destination" required style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;background:#fff;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'">
+            <option value="">— Select destination —</option>
+            <option value="Caribbean All-Inclusive">Caribbean All-Inclusive</option>
+<option value="Mexico All-Inclusive">Mexico All-Inclusive</option>
+<option value="Central America">Central America</option>
+<option value="Florida">Florida</option>
+<option value="International">International</option>
+          </select>
+        </div>
+
+        <div style="display:flex;flex-wrap:wrap;gap:.75rem;"><div style="flex:1;min-width:180px;margin-bottom:.85rem;"><label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Preferred Travel From</label><input type="date" name="travel_from" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'"></div><div style="flex:1;min-width:180px;margin-bottom:.85rem;"><label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Preferred Travel To</label><input type="date" name="travel_to" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'"></div></div>
+
+        <div style="margin-bottom:.85rem;">
+          <label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Number of Adults Traveling *</label>
+          <select name="num_adults" required style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;background:#fff;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'">
+            <option value="">—</option>
+            <option value="2">2 adults</option>
+            <option value="3">3 adults</option>
+            <option value="4">4 adults</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom:.85rem;">
+          <label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Children Traveling? If yes, list their ages</label>
+          <input type="text" name="children_ages" placeholder="e.g. 8, 11, 14 — or leave blank if no children" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'">
+          <p style="font-size:.78rem;color:#777;margin:.3rem 0 0;">⚠️ If any child will have a birthday before your resort arrival date, enter their age at arrival — not today. Resorts charge adult rates for guests who turn 13 before check-in.</p>
+        </div>
+
+        <div style="margin-bottom:.85rem;">
+          <label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.3rem;color:#333;">Specific Resort or Special Requests</label>
+          <textarea name="notes" rows="3" placeholder="If you have a specific resort in mind, special dates, accessibility needs (ground floor, wheelchair access, dietary requirements), or any other requests — tell us here." style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:6px;font-size:.95rem;box-sizing:border-box;font-family:inherit;transition:border-color .2s;resize:vertical;" onfocus="this.style.borderColor='#0077b6'" onblur="this.style.borderColor='#ddd'"></textarea>
+        </div>
+
+        <div style="margin-bottom:1rem;">
+          <label style="display:flex;align-items:center;gap:.5rem;font-size:.9rem;cursor:pointer;">
+            <input type="checkbox" name="subscribe" style="accent-color:#0077b6;width:16px;height:16px;">
+            <span>☑ Subscribe me to exclusive vacation deals and promotions</span>
+          </label>
+        </div>
+
+        
+
+        <button type="submit" id="vac-btn-a486e9" style="width:100%;background:#0077b6;color:#fff;font-weight:700;font-size:1rem;padding:.85rem;border:none;border-radius:6px;cursor:pointer;font-family:inherit;transition:all .2s;">
+          Submit My Application
+        </button>
+
+        <div id="vac-msg-a486e9" style="display:none;margin-top:1rem;padding:1.25rem;border-radius:6px;text-align:center;font-size:.95rem;font-weight:600;"></div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+function submitVacForm(e, id) {
+  e.preventDefault();
+  var form = document.getElementById('vac-form-' + id);
+  var btn  = document.getElementById('vac-btn-' + id);
+  var msg  = document.getElementById('vac-msg-' + id);
+
+  var p1name = form.querySelector('[name="p1_name"]').value.trim();
+  var phone  = form.querySelector('[name="phone"]').value.trim();
+  var email  = form.querySelector('[name="email"]').value.trim();
+  var dest   = form.querySelector('[name="destination"]').value;
+  var p1age  = form.querySelector('[name="p1_age"]').value;
+
+  if (!p1name || !phone || !email || !dest || !p1age) {
+    msg.style.display = 'block';
+    msg.style.background = '#fef2f2';
+    msg.style.color = '#991b1b';
+    msg.textContent = 'Please fill in all required fields.';
+    return;
+  }
+
+  var p2name    = form.querySelector('[name="p2_name"]').value.trim();
+  var p2age     = form.querySelector('[name="p2_age"]').value;
+  var travelFrom = form.querySelector('[name="travel_from"]').value;
+  var travelTo  = form.querySelector('[name="travel_to"]').value;
+  var adults    = form.querySelector('[name="num_adults"]').value;
+  var kids      = form.querySelector('[name="children_ages"]').value.trim();
+  var notes     = form.querySelector('[name="notes"]').value.trim();
+  var subscribe = form.querySelector('[name="subscribe"]').checked;
+
+  var summary = 'P1: ' + p1name + ' (age ' + p1age + ')';
+  if (p2name) summary += ' | P2: ' + p2name + (p2age ? ' (age ' + p2age + ')' : '');
+  summary += ' | ' + adults + ' adults';
+  if (kids) summary += ' | Kids ages: ' + kids;
+  if (travelFrom) summary += ' | Travel: ' + travelFrom + ' to ' + travelTo;
+  if (notes) summary += ' | Notes: ' + notes;
+
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+  btn.style.opacity = '0.7';
+
+  fetch('https://n8n.srv1232181.hstgr.cloud/webhook/a486e923-3d03-4051-ace1-7e61db89c843', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      caller_name: p1name,
+      business_name: p2name || 'N/A',
+      phone: phone,
+      email: email,
+      location: dest,
+      service_requested: dest,
+      urgency: 'Web Form',
+      notes: summary,
+      lead_source: window.location.href,
+      subscribe: subscribe,
+      p1_age: p1age,
+      p2_age: p2age,
+      travel_from: travelFrom,
+      travel_to: travelTo,
+      num_adults: adults,
+      children_ages: kids
+    })
+  })
+  .then(function(r) {
+    if (r.ok) {
+      form.style.display = 'none';
+      msg.style.display = 'block';
+      msg.style.background = '#f0fdf4';
+      msg.style.color = '#166534';
+      msg.innerHTML = '✅ <strong>Application received!</strong><br><br>We\'ll reach out to ' + email + ' or call ' + phone + ' within 24 hours to confirm your eligibility and discuss available packages.<br><br>Questions? Call us directly.';
+    } else { throw new Error('fail'); }
+  })
+  .catch(function() {
+    btn.disabled = false;
+    btn.textContent = 'Submit My Application';
+    btn.style.opacity = '1';
+    msg.style.display = 'block';
+    msg.style.background = '#fef2f2';
+    msg.style.color = '#991b1b';
+    msg.textContent = 'Something went wrong — please contact us directly';
+  });
+}
+</script>
+{{ end }}
